@@ -17,3 +17,4 @@
 - Users can view popular page
 - Users can follow/unfollow other users
 - Users can set profile to private/public
+- User can add products to their wishlist
