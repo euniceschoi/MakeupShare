@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
 
   def show
-    @user = User.params[:id]
+    @user = User.find(params[:id])
   end
 
   def user_params
+    params.require(:user).permit(:username, :email)
   end
 end
