@@ -13,4 +13,10 @@ class ApplicationController < ActionController::Base
    devise_parameter_sanitizer.for(:account_update) << :username
   end
 
+  private
+
+  def after_sign_in_path_for(resource)
+     "/users/#{current_user.id}"
+  end
+
 end
