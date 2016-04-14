@@ -14,6 +14,27 @@
  *= require_self
  */
 
+* {
+  font-family: "Montserrat";
+}
+
+#company-name {
+  float:left;
+  margin-left:15%;
+  color:#B00E5D;
+}
+
+#menu {
+  float:right;
+  margin-right:15%;
+}
+
 #nav-bar {
-  background-color:red;
+  display:table;
+  width:100%;
+  height:60px;
+  span {
+    display:table-cell;
+    vertical-align: middle;
+  }
 }
